@@ -1,0 +1,73 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Domain Intelligence API",
+    "version": "1.0.0",
+    "description": "Domain overviews for security and sales: registration, infrastructure, and risk signals."
+  },
+  "servers": [
+    {
+      "url": "https://data.dataleads.pro/v1"
+    }
+  ],
+  "paths": {
+    "/domain/overview": {
+      "post": {
+        "summary": "V1 Domain Overview",
+        "operationId": "v1_domain_overview_v1_domain_overview_post",
+        "parameters": [
+          {
+            "name": "x-rapidapi-proxy-secret",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "X-Rapidapi-Proxy-Secret"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DomainOverviewRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response V1 Domain Overview V1 Domain Overview Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
