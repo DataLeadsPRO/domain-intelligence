@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.json",
-  "name": "io.github.dataleadspro/domain-intelligence",
+  "name": "io.github.DataLeadsPRO/domain-intelligence",
   "description": "Domain overviews for security and sales: registration, infrastructure, and risk signals.",
   "version": "1.0.0",
   "repository": {
