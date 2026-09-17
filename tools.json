@@ -1,0 +1,8 @@
+[
+  {
+    "name": "domain_overview",
+    "method": "POST",
+    "path": "/domain/overview",
+    "description": "V1 Domain Overview"
+  }
+]
